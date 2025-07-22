@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your account details" />
+
+        <TextView
+            android:id="@+id/text_view_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mr Fullname User" />
+
+        <TextView
+            android:id="@+id/text_view_email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email@address.com" />
+
+        <TextView
+            android:id="@+id/text_view_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone number" />
+
+    </LinearLayout>
+</ScrollView>
