@@ -2,28 +2,35 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="36dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="36dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register" />
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif"
+            android:text="Register"
+            android:textSize="24sp" />
 
         <Spinner
             android:id="@+id/spinner_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             tools:listitem="@android:layout/simple_expandable_list_item_1" />
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_first_name"
@@ -33,20 +40,23 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_last_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:hint="Last name" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_email"
@@ -56,8 +66,10 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_phone_number"
@@ -69,8 +81,10 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_password"
@@ -84,7 +98,9 @@
             android:id="@+id/button_create_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Create account" />
+            android:layout_marginTop="36dp"
+            android:text="Create account"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </ScrollView>

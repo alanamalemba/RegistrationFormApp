@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var emailEditText: EditText
     private lateinit var phoneNumberEditText: EditText
     private lateinit var passwordEditText: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -61,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val intent = Intent(this, SummaryActivity::class.java)
-        intent.putExtra("User",user)
+        intent.putExtra("User", user)
         startActivity(intent)
     }
 }
