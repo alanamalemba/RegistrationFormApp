@@ -1,36 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    android:layout_height="match_parent">
+    android:padding="36dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your account details" />
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif"
+            android:text="Your account details"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/text_view_full_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mr Fullname User" />
+            android:layout_marginTop="48dp"
+            android:textSize="16sp"
+            tools:text="Mr Fullname User" />
 
         <TextView
             android:id="@+id/text_view_email_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="email@address.com" />
+            android:layout_marginTop="24dp"
+            android:textColor="@color/blue_accent"
+            android:textSize="16sp"
+            tools:text="email@address.com" />
 
         <TextView
             android:id="@+id/text_view_phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phone number" />
+            android:layout_marginTop="24dp"
+            android:textColor="@color/blue_accent"
+            android:textSize="16sp"
+            tools:text="Phone number" />
 
     </LinearLayout>
 </ScrollView>

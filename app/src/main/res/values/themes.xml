@@ -4,7 +4,8 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="colorPrimary">#42A5F5</item>
+        <item name="colorPrimary">@color/blue_accent</item>
+        <item name="colorPrimaryVariant">@color/blue_dark</item>
     </style>
 
     <style name="Theme.RegistrationFormApp" parent="Base.Theme.RegistrationFormApp" />
